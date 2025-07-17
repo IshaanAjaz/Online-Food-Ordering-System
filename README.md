@@ -1,7 +1,7 @@
 # Online-Food-Ordering-System
-**OVERVIEW**
+**OVERVIEW.**
 The SpiceVilla Online Ordering System is a web-based application designed to modernize the food ordering process for the SpiceVilla restaurant. It transforms a traditional static website into a dynamic platform where customers can conveniently browse menus, place orders, and track their status, while providing restaurant staff with an efficient administration panel for menu and order management.
-**FEATURES**
+**FEATURES.**
 User Authentication: Secure registration, login, and logout functionalities.
 
 Dynamic Menu Display: Browse food items categorized by type, with descriptions, prices, and images.
