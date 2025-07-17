@@ -1,0 +1,352 @@
+/*CSS reset*/
+*{
+    margin: 0;
+    padding: 0;
+}
+html{
+  scroll-behavior: smooth;
+}
+/*NAV SECTION*/
+#navbar {
+  display: flex;
+  align-items: center;
+  position: sticky;
+  top: 0px;
+  width:100%;
+}
+#spl{
+    margin: 3px 3px;
+}
+#spl img{
+    height: 60px;
+    margin: 2px 20px;
+
+}
+#navbar ul{
+display: flex;
+}
+#navbar::before {
+    content: "";
+    background-color: rgb(0, 0, 0);
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index:-1;
+    opacity: .76;
+
+}
+#navbar ul li{
+font-size: 18px;
+list-style: none;
+}
+
+#navbar ul li a{
+    display: block;
+    color: rgb(255, 255, 255);
+    padding: 3px 30px;
+    border-radius: 20px;
+    text-decoration: none;
+    font-family: "Poetsen One", sans-serif;
+}
+#navbar ul li a:hover{
+  color: goldenrod;
+  transition: 0.3s;
+  }
+/*home section*/
+#home{
+  display: flex;
+  flex-direction: column;
+  padding:3px 200px;
+  height: 335px;
+  justify-content: center;
+  align-items: center;
+}
+#home::before {
+  content: "";
+  position: absolute;
+  background: url('logo.jpg') no-repeat center center/cover;
+  height: 542px;
+  top:0px;
+  left:0px;
+  width: 100%;
+  z-index: -1;
+  opacity:0.89;
+}
+.hprimary{
+    font-size: 4rem;
+    font-family: "Agbalumo", system-ui;
+    text-align: center;
+    color: gold;
+    text-shadow: 2px 2px 3px rgba(249, 201, 29, 0.774), 0 0 25px rgba(0, 0, 0, 0.772), 0 0 10px rgba(197, 157, 28, 0.838);
+
+
+    /*buttons*/
+}
+.btn  {
+  border: none;
+}
+.btn a {
+    position: absolute;
+    display: inline-block;
+    padding: 10px 10px;
+    border: 3px solid rgb(0, 0, 0);
+    border-radius: 25px;
+    color: #ffde4b;
+    background-color:rgba(0, 0, 0, 0.365);
+    font-size: 16px;
+    text-decoration: none;
+    text-transform: uppercase;
+    overflow: hidden;
+    transition: .5s;
+    letter-spacing: 4px;
+    margin: 50px -80px;
+  }
+  .btn  a:hover {
+    background:   #f4e003bb;
+    color: #000000;
+    border: none;
+    border-radius: 25px;
+    box-shadow: 0 0 5px  #f4e003,
+                0 0 25px  #f4e003,
+                0 0 50px  #f4e003,
+                0 0 100px  #f4e003;
+  }
+  .btn a span {
+    position: absolute;
+    display: block;
+  }
+ .btn a span:nth-child(1) {
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 2px;
+    background: linear-gradient(90deg, transparent,  #f4e003);
+    animation: btn-anim1 1s linear infinite;
+  }  
+  .btn a span:nth-child(2) {
+    top: -100%;
+    right: 0;
+    width: 2px;
+    height: 100%;
+    background: linear-gradient(180deg, transparent,  #f4e003);
+    animation: btn-anim2 1s linear infinite;
+    animation-delay: .25s
+  }
+  .btn a span:nth-child(3) {
+    bottom: 0;
+    right: -100%;
+    width: 100%;
+    height: 2px;
+    background: linear-gradient(270deg, transparent, #000000);
+    animation: btn-anim3 1s linear infinite;
+    animation-delay: .5s
+  }
+    
+  .btn a span:nth-child(4) {
+    bottom: -100%;
+    left: 0;
+    width: 2px;
+    height: 100%;
+    background: linear-gradient(360deg, transparent, #000000);
+    animation: btn-anim4 1s linear infinite;
+    animation-delay: .75s
+  }
+/*services*/
+#services{
+  margin: 34px;
+  display: flex;
+}
+#services .box {
+  padding:60px 15px;
+  margin: -100px 36px;
+  border: 1px solid gold;
+    border-radius: 28px;
+    background: #00000052;
+    box-shadow: 2px 2px 3px rgba(0, 0, 0, 0.774), 0 0 25px rgb(255, 212, 42), 0 0 10px rgb(235, 213, 18);
+    margin-bottom: 20px;
+}
+#services .box img{
+  height: 160px;
+  display: block;
+  margin: auto;
+}
+.s-primary {
+  margin:160px 10px;
+  font-family: "Poetsen One", sans-serif;
+  font-size: 28px;
+  color: #ecd403;
+  text-shadow: 2px 2px 3px rgba(0, 0, 0, 0.774), 0 0 25px rgba(0, 0, 0, 0.772), 0 0 10px rgba(197, 157, 28, 0.838);
+}
+.para {
+  text-align: center;
+  color: #ecd403;
+  font-family: "Agbalumo", system-ui;
+  font-size: 16px;
+}
+.para button{
+  color: #fff;
+  border: none;
+  cursor: pointer;
+}
+.para button a {
+  color: gold;
+  padding: 5px 27px;
+  margin: -4px -72px;
+  font-family: "Poetsen One", sans-serif;
+  position: absolute;
+    display: inline-block;
+    font-size: 16px;
+    text-decoration: none;
+    overflow: hidden;
+    transition: .5s;
+    border:1px solid #ecd403;
+    border-radius: 15px;
+}
+.para button a:hover{
+  background:   #f4e003bb;
+  color: #000000;
+  border: none;
+  border-radius: 15px;
+  box-shadow: 0 0 5px  #f4e003,
+              0 0 25px  #f4e003,
+              0 0 50px  #f4e003,
+              0 0 100px  #f4e003;
+}
+.para2 {
+  text-align: center;
+  color: #ecd403;
+  font-family: "Agbalumo", system-ui;
+  font-size: 16px;
+}
+.para2 button{
+  color: #fff;
+  border: none;
+  cursor: pointer;
+}
+.para2 button a {
+  color: gold;
+  padding: 7px 27px;
+  margin: 4px -108px;
+  font-family: "Poetsen One", sans-serif;
+  position: absolute;
+    display: inline-block;
+    font-size: 16px;
+    text-decoration: none;
+    overflow: hidden;
+    transition: .5s;
+    border:1px solid #ecd403;
+    border-radius: 15px;
+}
+.para2 button a:hover{
+  background:   #f4e003bb;
+  color: #000000;
+  border: none;
+  border-radius: 15px;
+  box-shadow: 0 0 5px  #f4e003,
+              0 0 25px  #f4e003,
+              0 0 50px  #f4e003,
+              0 0 100px  #f4e003;
+}
+/* Menu*/
+#menu {
+  display: flex;
+  margin: 64px;
+  justify-content: center;
+}
+#menu .menu-box{
+  padding: 8px;
+  margin: 8px 68px;
+  border-radius: 0px;
+  background: #ecd403;
+  box-shadow: 2px 2px 3px rgba(0, 0, 0, 0.774), 0 0 25px rgb(255, 212, 42), 0 0 10px rgb(235, 213, 18);
+  margin-bottom: 20px;
+}
+#menu ul li{
+  font-size: 14px;
+  list-style: none;
+  font-family:"Poetsen One", sans-serif ;
+  text-align: center;
+  margin: 5px;
+  }
+  /* Footer */
+  footer{
+    background-color: #000000;
+  }
+.footerContainer{
+width: 100%;
+padding: 35px 0px 35px;
+}
+.socialicons {
+  display: flex;
+  justify-content: center;
+}
+.socialicons a {
+  text-decoration: none;
+  margin: 10px;
+  background-color: rgb(0, 0, 0);
+  border-radius: 50%;
+}
+.socialicons a i{
+  font-size: 2em;
+  color: #fff;
+  opacity: 0.9;
+}
+.socialicons a :hover{
+ background-color:black;
+ transition: 0.3s;
+}
+.socialicons a i:hover {
+  color:gold;
+  transition: 0.3s;
+ }
+.footerNav {
+  margin: 30px 0px;
+}
+.footerNav ul {
+  display: flex;
+  justify-content: center;
+}
+.footerNav ul a {
+  color: white;
+  text-decoration: none;
+  margin: 20px;
+  transition: 0.3s;
+  font-family:"Poetsen One", sans-serif ;
+}
+.footerNav ul a:hover {
+  color: goldenrod;
+  transition: 0.3s;
+}
+.footerbottom{
+  text-align: center;
+  color: #ecd403;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+.designer{
+  color: #f1c607;
+}
+  
+  /* Utility*/
+  .s-primary{
+    text-align: center;
+  }
+  .s-secondry{
+    text-align: center;
+    color: #ecd403;
+    font-family: "Poetsen One", sans-serif;
+    margin: 10px;
+  }
+  body{
+    background-color: #000000e7;
+  }
+  .menu-title{
+    text-align: center;
+    color: #ecd403;
+    font-family: "Poetsen One", sans-serif;
+    margin: 10px;
+  }
+  .m-primary {
+    text-align: center;
+    font-family:"Poetsen One", sans-serif ;
+
+  }

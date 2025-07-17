@@ -1,0 +1,31 @@
+#head{
+    text-align: center;
+    color: aliceblue;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+}
+.heading{
+    color: gold;
+    font-size: 20px;
+    font-family: "Poetsen One", sans-serif;
+}
+body{
+    background-color:#000000e7;
+}
+.m-heading{
+    color: gold;
+    font-size: 37px;
+    font-family: "Poetsen One", sans-serif;
+}
+.btn{
+   border: 2px solid gold;
+    background-color: rgba(0, 0, 0, 0.32);
+    padding: 8px 20px;
+}
+.btn a{
+    text-decoration: none;
+  color: aliceblue;
+}
+.btn a:hover{
+    color: gold;
+
+}

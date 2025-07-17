@@ -1,0 +1,90 @@
+/*Home*/
+#home{
+    flex-direction: column;
+    height: 400px;
+    padding: 22px;
+    align-content: center;
+}
+html{
+    scroll-behavior: smooth;
+}
+#home::before{
+    height: 440px;
+    top: 0px;
+    left: 0px;
+    width: 100%
+
+}
+.hprimary{
+    font-size: 30px;
+    text-align: center;
+}
+.s-primary {
+    font-size: 20px;
+    margin: 30px;
+    margin-bottom: 36px;
+}
+#services .box img {
+    height: 115px;
+}
+/*navbar*/
+#navbar ul{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    }
+#navbar{
+    flex-direction: column;
+    width: 100%;
+    position:fixed;
+}
+#navbar ul li a{
+    font-size: 18px;
+    margin: 6px -22px;
+}
+/*services*/
+#services{
+    flex-direction:column ;
+}
+#services .box{
+    margin: 2px 12px;
+    padding: 50px 20px;
+    border-radius: 0px;
+}
+/*menu*/
+#menu{
+    flex-direction: column;
+}
+#menu .menu-box {
+    padding: 18px;
+    margin: 6px;
+}
+
+/*footer*/
+.footerContainer{
+width: 100%;
+padding: 35px 0px 35px;
+}
+.footerNav ul a {
+font-size: 12px;
+}
+/*Burger*/
+.burger{
+    position: absolute;
+    cursor: pointer;
+    right: 5%;
+    top: 21px;
+}
+.line{
+    width: 33px;
+    height: 4px;
+    background-color:gold;
+    margin: 5px 3px;
+}
+.h-nav-resp{
+    height: 74px;
+    transition: 0.3s;
+}
+.v-class-resp{
+    opacity: 0;
+}
