@@ -1,7 +1,9 @@
 # Online-Food-Ordering-System
-**OVERVIEW.**
+**OVERVIEW:**
+
 The SpiceVilla Online Ordering System is a web-based application designed to modernize the food ordering process for the SpiceVilla restaurant. It transforms a traditional static website into a dynamic platform where customers can conveniently browse menus, place orders, and track their status, while providing restaurant staff with an efficient administration panel for menu and order management.
-**FEATURES.**
+**FEATURES:**
+
 User Authentication: Secure registration, login, and logout functionalities.
 
 Dynamic Menu Display: Browse food items categorized by type, with descriptions, prices, and images.
@@ -12,6 +14,7 @@ Order Placement: Seamless checkout process with delivery address and contact inf
 
 Order History & Tracking: View past and current orders, including detailed breakdowns and current status (pending, processing, completed, cancelled).
 **HOW TO USE**
+
 1. Install and setup XAMPP 
 2. Create a database(using code provided in spicevilla_db.sql)
 3. Download all files from this repo.
